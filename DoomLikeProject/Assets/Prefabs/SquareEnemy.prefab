@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 2012151602137954251}
   - component: {fileID: 2012151602137954252}
   - component: {fileID: 2012151602137954250}
+  - component: {fileID: 99259862716155255}
   - component: {fileID: 2012151602137954248}
   - component: {fileID: 2012151602137954249}
   - component: {fileID: 2012151602137954294}
@@ -100,6 +101,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerPosition: {fileID: 11400000, guid: a1b3de77d285395488ed748c6663c15e, type: 2}
+--- !u!114 &99259862716155255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012151602137954253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a341d14c16f2884a890a42a79b2594c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  playerPosition: {fileID: 11400000, guid: a1b3de77d285395488ed748c6663c15e, type: 2}
+  damageEvent: {fileID: 11400000, guid: d3375b233ddd87948beb3c0ddcfa5d52, type: 2}
 --- !u!195 &2012151602137954248
 NavMeshAgent:
   m_ObjectHideFlags: 0

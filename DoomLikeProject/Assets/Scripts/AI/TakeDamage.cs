@@ -22,7 +22,6 @@ public class TakeDamage : MonoBehaviour
             
             if(hitInfo.collider == enemyCollider)
             {
-                Debug.Log("Hit!");
                 hPManager.DecreaseHP();
             }   
             

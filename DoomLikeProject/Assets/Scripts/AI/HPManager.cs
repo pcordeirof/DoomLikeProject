@@ -17,7 +17,6 @@ public class HPManager : MonoBehaviour
         slider.value = maxHP.Value;
 
         HP = maxHP.Value;
-        Debug.Log(slider.value);
     }
 
 
