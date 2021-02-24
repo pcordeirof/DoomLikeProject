@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController characterController;
     public float speed;
-
+    public PlayerPosition playerPosition;
     void Update()
     {
         float x = Input.GetAxis("Horizontal");
@@ -15,5 +15,6 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
         
         characterController.Move(move * speed * Time.deltaTime);
+        playerPosition.position = transform.position;
     }
 }

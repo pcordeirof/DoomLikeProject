@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class RotateToPlayer : MonoBehaviour
 {
-    public Transform playerTransform;
+    public PlayerPosition playerPosition;
 
     void Update()
     {
-        Vector3 target = new Vector3(playerTransform.position.x, transform.position.y, playerTransform.position.z);
+        Vector3 target = new Vector3(playerPosition.position.x, transform.position.y, playerPosition.position.z);
         transform.LookAt(target);
     }
 }

@@ -99,8 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bd42187a6bd4343ae84858eaa47d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerTransform: {fileID: 6157959956516741728, guid: e3e211fbb3fe6774bae9ec05fab3f851,
-    type: 3}
+  playerPosition: {fileID: 11400000, guid: a1b3de77d285395488ed748c6663c15e, type: 2}
 --- !u!195 &2012151602137954248
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -138,8 +137,7 @@ MonoBehaviour:
   agent: {fileID: 2012151602137954248}
   baseOfsset: {fileID: 11400000, guid: 7912adade9139ea4e9e4c306f9c51af5, type: 2}
   isFlying: 1
-  playerTransform: {fileID: 6157959956516741728, guid: e3e211fbb3fe6774bae9ec05fab3f851,
-    type: 3}
+  playerPosition: {fileID: 11400000, guid: a1b3de77d285395488ed748c6663c15e, type: 2}
 --- !u!114 &2012151602137954294
 MonoBehaviour:
   m_ObjectHideFlags: 0

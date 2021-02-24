@@ -7,8 +7,7 @@ public class FollowPlayer : MonoBehaviour
     public NavMeshAgent agent;
     public FloatVariable baseOfsset;
     public bool isFlying;
-
-    public Transform playerTransform;
+    public PlayerPosition playerPosition;
 
     void Start()
     {
@@ -21,6 +20,6 @@ public class FollowPlayer : MonoBehaviour
     
     void Update()
     {
-        agent.destination = playerTransform.position;
+        agent.destination = playerPosition.position;
     }
 }
