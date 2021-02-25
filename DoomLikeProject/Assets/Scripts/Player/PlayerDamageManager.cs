@@ -6,6 +6,7 @@ public class PlayerDamageManager : MonoBehaviour
 {
     public FloatVariable playerHP;
     public FloatVariable playerMaxHP;
+    public FloatVariable damageAmountTaken;
 
     private void Start()
     {
@@ -14,9 +15,8 @@ public class PlayerDamageManager : MonoBehaviour
 
     public void DecreaseHP()
     {
-        playerHP.Value -= .5f;
+        playerHP.Value -= damageAmountTaken.Value;
         Debug.Log(playerHP.Value);
-
         if(playerHP.Value <= 0)
         {
             Destroy(gameObject);
