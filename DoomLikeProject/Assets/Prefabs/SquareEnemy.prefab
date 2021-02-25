@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 2012151602137954248}
   - component: {fileID: 2012151602137954249}
   - component: {fileID: 2012151602137954294}
+  - component: {fileID: 470625469732140276}
   - component: {fileID: 2012151602137954295}
   m_Layer: 0
   m_Name: SquareEnemy
@@ -153,10 +154,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5224f5fa2e8916b4dbadde818f077544, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  agent: {fileID: 2012151602137954248}
-  baseOfsset: {fileID: 11400000, guid: 7912adade9139ea4e9e4c306f9c51af5, type: 2}
-  isFlying: 1
   playerPosition: {fileID: 11400000, guid: a1b3de77d285395488ed748c6663c15e, type: 2}
+  agent: {fileID: 2012151602137954248}
 --- !u!114 &2012151602137954294
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -172,6 +171,22 @@ MonoBehaviour:
   cameraMain: {fileID: 0}
   enemyCollider: {fileID: 2012151602137954295}
   hPManager: {fileID: 2012151603549557474}
+--- !u!114 &470625469732140276
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2012151602137954253}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 011cbd9a305ae8c4a917215e1d75aad3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  agent: {fileID: 2012151602137954248}
+  baseOfsset: {fileID: 11400000, guid: 7912adade9139ea4e9e4c306f9c51af5, type: 2}
+  isFlying: 1
+  speed: {fileID: 11400000, guid: 6021f328ddb4f5c4c82dbc8449f55735, type: 2}
 --- !u!65 &2012151602137954295
 BoxCollider:
   m_ObjectHideFlags: 0
