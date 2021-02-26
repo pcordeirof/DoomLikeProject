@@ -120,6 +120,7 @@ MonoBehaviour:
     type: 2}
   damageAmountTaken: {fileID: 11400000, guid: a39ee27d16bb0b54a868c0f71ae6fa78, type: 2}
   damageAmount: {fileID: 11400000, guid: dc5b5ee921ddfb340b1d3a458661273c, type: 2}
+  rangeToDealDamage: {fileID: 11400000, guid: 28059d5818a5e1842b98a85cde6ddede, type: 2}
 --- !u!195 &2012151602137954248
 NavMeshAgent:
   m_ObjectHideFlags: 0

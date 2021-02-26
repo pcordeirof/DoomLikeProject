@@ -8,7 +8,8 @@ public class RotateToPlayer : MonoBehaviour
 
     void Update()
     {
-        Vector3 target = new Vector3(playerPosition.position.x, transform.position.y, playerPosition.position.z);
+
+        Vector3 target = new Vector3(playerPosition.position.x, playerPosition.position.y, playerPosition.position.z);
         transform.LookAt(target);
     }
 }

@@ -9,12 +9,13 @@ public class DoDamage : MonoBehaviour
     public FloatVariable secondsToDealDamage;
     public FloatVariable damageAmountTaken;
     public FloatVariable damageAmount;
+    public FloatVariable rangeToDealDamage;
     float time = 0f;
     void FixedUpdate()
     {
         float distance = Vector3.Distance(playerPosition.position, transform.position);
      
-        if(distance <= 2.5f)
+        if(distance <= rangeToDealDamage.Value)
         {
             time++;
         }
