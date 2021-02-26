@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bc0ab44da35007748993230f6249d9cb, type: 3}
   m_Name: SecondsToDealDamage
   m_EditorClassIdentifier: 
-  Value: 1
+  Value: 0.5
