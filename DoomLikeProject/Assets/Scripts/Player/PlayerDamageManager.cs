@@ -23,7 +23,7 @@ public class PlayerDamageManager : MonoBehaviour
         Debug.Log("PlayerHPValue: " + playerHP.Value);
         if(playerHP.Value <= 0)
         {
-            Destroy(gameObject);
+            Time.timeScale = 0;
         }
     }
 
