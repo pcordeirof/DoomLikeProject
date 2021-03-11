@@ -12,5 +12,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ab1c22d7155327d4d815aff6a888328d, type: 3}
   m_Name: EnemyPossiblesPositions
   m_EditorClassIdentifier: 
-  EnemyPossiblesPositions: []
+  EnemyPossiblesPositions:
+  - {x: 5, y: 4, z: 5}
+  - {x: 6, y: 4, z: 5}
+  - {x: 8, y: 4, z: 8}
+  - {x: 9, y: 4, z: 9}
+  - {x: 11, y: 4, z: 11}
+  - {x: 10, y: 4, z: 10}
+  - {x: 3, y: 4, z: 3}
+  - {x: 4, y: 4, z: 4}
+  - {x: 12, y: 4, z: 12}
+  - {x: 12, y: 4, z: 13}
   Height: {fileID: 11400000, guid: 7912adade9139ea4e9e4c306f9c51af5, type: 2}

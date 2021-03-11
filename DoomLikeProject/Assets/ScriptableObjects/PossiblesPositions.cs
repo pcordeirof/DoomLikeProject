@@ -14,14 +14,20 @@ public class PossiblesPositions: ScriptableObject
     public void AddPositon(float x,  float z)
     {
         Vector3 position = new Vector3(x, Height.Value, z);
-        EnemyPossiblesPositions.Add(position);
+        if (!EnemyPossiblesPositions.Contains(position))
+        {
+            EnemyPossiblesPositions.Add(position);
+        }
     }
 
     [Button("Remove Position")]
     public void RemovePositon(float x, float z)
     {
         Vector3 position = new Vector3(x, Height.Value, z);
-        EnemyPossiblesPositions.Remove(position);
+        while(EnemyPossiblesPositions.Contains(position))
+        {
+            EnemyPossiblesPositions.Remove(position);
+        }
     }
 
     [Button("Clean Positions")]
