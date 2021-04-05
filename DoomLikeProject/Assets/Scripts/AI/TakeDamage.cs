@@ -6,7 +6,11 @@ public class TakeDamage : MonoBehaviour
 {
     public Camera cameraMain;
     RaycastHit hitInfo = new RaycastHit();
-    public Collider enemyCollider;
+    //public Collider enemyCollider;
+    public Collider headCollider;
+    public FloatVariable headDamageValue;
+    public FloatVariable bodyDamageValue;
+    public Collider bodyCollider;
     public HPManager hPManager;
 
     private void Start()
@@ -20,10 +24,14 @@ public class TakeDamage : MonoBehaviour
             Ray ray = cameraMain.ScreenPointToRay(Input.mousePosition);
             Physics.Raycast(ray.origin, ray.direction, out hitInfo);
             
-            if(hitInfo.collider == enemyCollider)
+            if(hitInfo.collider == headCollider)
             {
-                hPManager.DecreaseHP();
-            }   
+                hPManager.DecreaseHP(headDamageValue.Value);
+            }
+            else if(hitInfo.collider == bodyCollider)
+            {
+                hPManager.DecreaseHP(bodyDamageValue.Value);
+            }
             
         }
     }

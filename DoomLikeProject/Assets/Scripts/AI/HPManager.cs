@@ -20,9 +20,9 @@ public class HPManager : MonoBehaviour
     }
 
 
-    public void DecreaseHP()
+    public void DecreaseHP(float damageValue)
     {
-        HP--;
+        HP -= damageValue;
         slider.value = HP;
         if(HP <= 0)
         {
