@@ -221,6 +221,7 @@ MonoBehaviour:
   bodyDamageValue: {fileID: 11400000, guid: 955c80589377f214793b3502c8d79bfc, type: 2}
   bodyCollider: {fileID: 1919682940276985258}
   hPManager: {fileID: 2012151603549557474}
+  shot: {fileID: 11400000, guid: 72086d62e7569b84fadd2ad071a8163b, type: 2}
 --- !u!114 &470625469732140276
 MonoBehaviour:
   m_ObjectHideFlags: 0

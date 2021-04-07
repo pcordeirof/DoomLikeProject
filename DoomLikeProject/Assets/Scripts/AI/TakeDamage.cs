@@ -12,6 +12,7 @@ public class TakeDamage : MonoBehaviour
     public FloatVariable bodyDamageValue;
     public Collider bodyCollider;
     public HPManager hPManager;
+    public BoolVariable shot;
 
     private void Start()
     {
@@ -19,7 +20,7 @@ public class TakeDamage : MonoBehaviour
     }
     void Update()
     {
-        if(Input.GetMouseButtonDown(0))
+        if(shot.State == true)
         {
             Ray ray = cameraMain.ScreenPointToRay(Input.mousePosition);
             Physics.Raycast(ray.origin, ray.direction, out hitInfo);
@@ -32,7 +33,8 @@ public class TakeDamage : MonoBehaviour
             {
                 hPManager.DecreaseHP(bodyDamageValue.Value);
             }
-            
+
+            Debug.Log(hPManager.HP);
         }
     }
 
