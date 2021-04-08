@@ -24,7 +24,7 @@ public class PlayerDamageManager : MonoBehaviour
         if (!isDead)
         {
             playerHP.Value -= damageAmountTaken.Value;
-            Debug.Log("PlayerHPValue: " + playerHP.Value);
+            //Debug.Log("PlayerHPValue: " + playerHP.Value);
         }
 
         if(playerHP.Value <= 0)
@@ -40,6 +40,6 @@ public class PlayerDamageManager : MonoBehaviour
         {
             Time.timeScale = 0;
         }
-        Debug.Log("SliderHPValue: " + slider.value);
+        //Debug.Log("SliderHPValue: " + slider.value);
     }
 }
