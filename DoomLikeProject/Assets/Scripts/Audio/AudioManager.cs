@@ -9,7 +9,7 @@ public class AudioManager : MonoBehaviour
     public static AudioManager instance;
 
     public Sound[] sounds;
-
+    AudioMixerGroup pitchBendGroup;
     void Awake()
     {
         if (instance == null)
@@ -28,6 +28,11 @@ public class AudioManager : MonoBehaviour
             s.Source.pitch = s.Pitch;
             s.Source.loop = s.Loop;
         }
+        
+        pitchBendGroup = Resources.Load<UnityEngine.Audio.AudioMixerGroup>("Pitch Bend Mixer");
+
+        Play("WaveTomJobim");
+
         DontDestroyOnLoad(gameObject);
     }
 
@@ -49,5 +54,14 @@ public class AudioManager : MonoBehaviour
     {
         Sound s = Array.Find(sounds, sound => sound.SoundName == name);
         s.Source.volume = amount;
+    }
+
+    public void ChangeVelocity (string name, float amount)
+    {
+        Sound s = Array.Find(sounds, sound => sound.SoundName == name);
+        s.Source.outputAudioMixerGroup = pitchBendGroup;
+
+        s.Source.pitch = amount;
+        pitchBendGroup.audioMixer.SetFloat("pitchBend", 1f / amount);
     }
 }

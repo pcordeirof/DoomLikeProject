@@ -23,7 +23,7 @@ public class GunRecoil : MonoBehaviour
     {
         audioManager.PlayOneShot("GunShotSFX");
         aimTransform.DOShakePosition(.5f, vibrato: 100, strength: new Vector3(10, 10, 0));
-        cameraTransform.DOShakeRotation(.5f, strength: new Vector3(0, 0, 5));
+        cameraTransform.DOShakeRotation(.1f, strength: new Vector3(0, 0, 5));
         shot.State = false;
 
     }
